@@ -1,5 +1,5 @@
 {
-    "name": "movemoveapp/laravel-dadata-fixed",
+    "name": "laravel-dadata-sdk/laravel-dadata-fixed",
     "description": "Laravel SDK for working with the DaData.RU service API",
     "keywords": [
         "movemoveapp",
