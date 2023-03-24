@@ -74,14 +74,16 @@ class DaDataCompany extends DaDataService
 
         $locations_array = [];
         if (! is_null($locations)) {
-            for ($i = 0; $i < count(explode(',', $locations)); $i++) {
+            $locations = explode(',', $locations);
+            for ($i = 0; $i < count($locations); $i++) {
                 array_push($locations_array, ['kladr_id' => trim($locations[$i])]);
             }
         }
 
         $locations_boost_array = [];
         if (! is_null($locations_boost)) {
-            for ($i = 0; $i < count(explode(',', $locations_boost)); $i++) {
+            $locations_boost = explode(',', $locations_boost);
+            for ($i = 0; $i < count($locations_boost); $i++) {
                 array_push($locations_boost_array, ['kladr_id' => trim($locations_boost[$i])]);
             }
         }
